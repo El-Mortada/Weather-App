@@ -101,20 +101,6 @@ async function getData(cairo) {
     responseData.forecast.forecastday[6].day.mintemp_c + "<sup>o</sup>" + "C";
   document.getElementById("rainChance7").innerHTML =
     responseData.forecast.forecastday[6].day.daily_chance_of_rain + "%";
-
-  document.getElementById("minDegreeSec2").innerHTML =
-    responseData.forecast.forecastday[1].day.mintemp_c;
-  document.getElementById("secondStatus").innerHTML =
-    responseData.forecast.forecastday[1].day.condition.text;
-  document.getElementById("maxDegreeSec3").innerHTML =
-    responseData.forecast.forecastday[2].day.maxtemp_c;
-  document.getElementById("minDegreeSec3").innerHTML =
-    responseData.forecast.forecastday[2].day.mintemp_c;
-  document.getElementById("thirdStatus").innerHTML =
-    responseData.forecast.forecastday[2].day.condition.text;
-  document.getElementById(
-    "icon2"
-  ).innerHTML = `<img src="${responseData.forecast.forecastday[2].day.condition.icon}" alt=""></img>`;
 }
 getData("cairo");
 function clear() {
