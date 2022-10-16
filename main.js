@@ -2,7 +2,7 @@ let userSearchInput = document.getElementById("userSearchInput");
 let array = [];
 async function getData(cairo) {
   let myResponse = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=c15916080195416ea8c103216221110&q=${cairo}&days=7&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=c15916080195416ea8c103216221110&q=${cairo}&days=7&aqi=no&alerts=no`
   );
 
   let responseData = await myResponse.json();
