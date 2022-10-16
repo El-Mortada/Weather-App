@@ -1,0 +1,61 @@
+body {
+  background-color: #7db3f0;
+}
+.row {
+  /* height: 90vh; */
+  background-color: #100e3b;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.left-info {
+  border-radius: 20px 0 0 20px;
+}
+.borderless {
+  border: 3px solid grey;
+}
+.img {
+  position: relative;
+  flex-basis: 1;
+  transition: all 0.25s ease-in-out;
+}
+.img img {
+  height: 150px;
+}
+.img:hover {
+  transform: translateY(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cloud1 {
+  position: absolute;
+  right: 50%;
+  opacity: 20%;
+}
+.cloud2 {
+  position: absolute;
+  left: 50%;
+  opacity: 20%;
+  bottom: 50%;
+}
+h1 {
+  font-size: 75px;
+  margin-top: 50px;
+}
+.progress1 {
+  transform: rotateZ(-90deg);
+}
+.progress {
+  width: 100%;
+}
+.rain-chanse {
+  height: 300px;
+}
+.btn2 {
+  position: absolute;
+  left: 90%;
+  z-index: 555;
+}
+.rainTime {
+  padding-right: 45px;
+}
